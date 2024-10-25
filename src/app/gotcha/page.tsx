@@ -53,6 +53,8 @@ export default function Home() {
                   <option value="">San Francisco/San Jose</option>
                   <option value="">Seattle</option>
                 </select>
+                <br />
+                <input type="submit" value="Submit" className="px-4 py-2 text-white bg-[#E94B3C]" disabled/>
               </form>
               {/* <ContactForm /> */}
             </div>
