@@ -7,6 +7,10 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      'display': ['var(--font-angel)'],
+      'body': ['var(--font-molengo)'],
+    },
     extend: {
       colors: {
         background: "var(--background)",
