@@ -1,5 +1,6 @@
 import Image from "next/image";
 // import ContactForm from "@/components/form";
+import Survey from "@/components/survey";
 
 export default function Home() {
   return (
@@ -35,28 +36,7 @@ export default function Home() {
               <p>All joking laid aside, the true intent for this QR code was science. You have so graciously scanned and been led to the primary purpose of this website which is research and not development. So please, when answering the survey, keep in mind that this is for posterity.</p>
               <br />
               {/* <p>[form will go here eventually]</p> */}
-              <form action="alert('fake form fill... gotcha again!')">
-                <label htmlFor="">Where did you scan this QR code?</label>
-                <br />
-                <select name="" id="">
-                  <option value="">Atlanta</option>
-                  <option value="">Birmingham</option>
-                  <option value="">Chicago</option>
-                  <option value="">Dallas/Fort Worth</option>
-                  <option value="">Houston</option>
-                  <option value="">Los Angeles</option>
-                  <option value="">Nashville</option>
-                  <option value="">New York</option>
-                  <option value="">Orlando</option>
-                  <option value="">Phoenix</option>
-                  <option value="">San Diego</option>
-                  <option value="">San Francisco/San Jose</option>
-                  <option value="">Seattle</option>
-                </select>
-                <br />
-                <input type="submit" value="Submit" className="px-4 py-2 text-white bg-[#E94B3C]" disabled/>
-              </form>
-              {/* <ContactForm /> */}
+              <Survey />
             </div>
           </div>
         </div>

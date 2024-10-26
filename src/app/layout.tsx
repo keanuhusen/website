@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Script from 'next/script';
 import "./globals.css";
 
 const molengo = localFont({
@@ -38,6 +39,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-M088S0GK9S" />
+      <Script id="google-analytics">
+        {'window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "G-M088S0GK9S");'}
+      </Script>
       <body
         className={`${angel.variable} ${molengo.variable} font-body antialiased`}
       >
