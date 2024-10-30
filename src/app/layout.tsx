@@ -28,8 +28,8 @@ const angel = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Keanu Husen",
-  description: "Problem solver extraordinaire",
+  title: "QR Code Loser!",
+  description: "Welcome to QR Code Loser. You have lost... loser.",
 };
 
 export default function RootLayout({
