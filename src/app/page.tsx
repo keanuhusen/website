@@ -1,11 +1,11 @@
 // import Image from "next/image";
-import { headers } from 'next/headers'
+// import { headers } from 'next/headers'
 
 export default async function Home() {
-  const headersList = await headers()
-  const userAgent = headersList.get('user-agent');
-  console.log(userAgent);
-  console.log(headersList);
+  // const headersList = await headers();
+  // const userAgent = headersList.get('user-agent');
+  // // console.log(userAgent);
+  // console.log(headersList);
   return (
     <div className="block">
       <main className="py-8 px-4">
