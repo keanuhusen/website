@@ -1,31 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import Script from 'next/script';
-import "./globals.css";
-
-const molengo = localFont({
-  src: [
-    {
-      path: 'fonts/molengo/molengo-regular.woff2',
-      weight: '400',
-      style: 'normal',
-    }
-  ],
-  display: 'swap',
-  variable: '--font-molengo',
-});
-
-const angel = localFont({
-  src: [
-    {
-      path: 'fonts/angel-club/angel-club-regular.otf',
-      weight: '400',
-      style: 'normal',
-    }
-  ],
-  display: 'swap',
-  variable: '--font-angel',
-});
+// import "/globals.css";
 
 export const metadata: Metadata = {
   title: "MTG Cards for HC/COTH",
@@ -44,7 +19,7 @@ export default function RootLayout({
         {'window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "G-M088S0GK9S");'}
       </Script>
       <body
-        className={`${angel.variable} ${molengo.variable} font-body antialiased`}
+        className={`font-body antialiased`}
       >
         {children}
       </body>
